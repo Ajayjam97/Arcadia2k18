@@ -3,7 +3,7 @@ var eventobj = {
 '1':'2.pdf',
 '2':'3.pdf'
 };
-var base_url = "file:///A:/Arcadia2k18-rdedit/markups-eventoz";
+var base_url = "https://arcadiachatbot.firebaseapp.com";
 
 function eventpdf() {
 	
