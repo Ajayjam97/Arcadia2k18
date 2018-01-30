@@ -20,6 +20,8 @@
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
 
+    <!-- Carousel Style -->
+    <link rel="stylesheet" href="./carousel_style.css">
     <!--Header Style -->
     <link href="headerstyle.css" rel="stylesheet">
 
@@ -148,32 +150,40 @@
 		</section>
 		<!-- End About -->
 
-		<!-- Start Video -->
-		<section id="mu-video">
-			<div class="mu-video-overlay">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="mu-video-area">
-								<h2>Watch Previous Event Video</h2>
-								<a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
-							</div>
-						</div>
-					</div>
+		<!-- Start Carousel -->
+		<section>
+			<div class="container">
+  				<br>
+  				<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+   					
+    				<ol>
+     					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      					<li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					    <li data-target="#myCarousel" data-slide-to="3"></li>
+    				</ol>
+
+    				<div class="carousel-inner" role="listbox">
+     					<div class="item active" role="option">
+        					<img src="" alt="">
+      					</div>
+
+				       	<div class="item" role="option">
+				         	<img src="" alt="">
+				      	</div>
+    
+					    <div class="item" role="option">
+					      	<img src="" alt="">
+					    </div>
+
+				      	<div class="item" role="option">
+					        <img src="" alt="">
+					    </div>
+    				</div>
 				</div>
 			</div>
-
-			<!-- Start Video content -->
-			<div class="mu-video-content">
-				<div class="mu-video-iframe-area">
-					<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-					<iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-			<!-- End Video content -->
-
 		</section>
-		<!-- End Video -->
+		<!-- End Carousel -->
 
 		<!-- Start Schedule  -->
 		<section id="mu-schedule">
