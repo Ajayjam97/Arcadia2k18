@@ -216,66 +216,6 @@ button:focus {
 
 
 
-/*--------------------*/
-/* HEADER */
-/*--------------------*/
-
-#mu-hero {
-	background-image: url("assets/images/head-featured-bg.jpg");
-	display: inline;
-	float: left;
-	width: 100%;
-	background-position: center center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-.mu-hero-overlay {
-	display: inline;
-	float: left;
-	opacity: 0.94;
-	width: 100%;
-}
-
-.mu-logo-area {
-	display: inline;
-	float: left;
-	text-align: center;
-	width: 100%;
-}
-
-.mu-logo {
-	font-size: 35px;
-	font-family: 'Montserrat', sans-serif;
-	display: inline-block;
-	font-weight: 600;
-	background: #fff;
-	padding: 5px 20px;
-	margin-bottom: 30px;
-}
-
-
-.mu-menu-btn {
-	position: fixed;
-	right: 15%;
-	top: 50px;
-	color: #fff;
-	font-size: 25px;
-	border: 2px solid #fff;
-	padding: 5px 14px;
-	z-index: 999;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.mu-menu-btn:hover,
-.mu-menu-btn:focus {
-	border: 2px solid #fff;
-}
-
-
 
 /*=== Featured section ===*/
 
