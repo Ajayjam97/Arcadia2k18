@@ -8,6 +8,7 @@
 	-moz-transition-property: opacity;
 	transition-property: opacity;
 	transition-duration: 2s;
+
 }
 
 .carousel-fade .carousel-inner .active {
