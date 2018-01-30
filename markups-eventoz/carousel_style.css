@@ -10,7 +10,6 @@
 	-webkit-transition-property: opacity;
 	-moz-transition-property: opacity;
 	transition-property: opacity;
-	transition-duration: 5s;
 }
 
 .carousel-fade .carousel-inner .active {
