@@ -1,4 +1,14 @@
-.carousel-inner > .item > img {
+.carousel-inner .item img {
       width: 70%;
       margin: auto;
   }
+
+.carousel-inner .item {
+    opacity: 0.05;
+	transition-property: opacity;
+	transition-duration: 5s;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
