@@ -5,6 +5,10 @@
 
 .carousel-inner .item {
     opacity: 0.05;
+    -ms-transition-property: opacity;
+	-o-transition-property: opacity;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
 	transition-property: opacity;
 	transition-duration: 5s;
 }
