@@ -4,7 +4,7 @@
   }
 
 .carousel-inner .item {
-    opacity: 0.05;
+    opacity: 0;
     -ms-transition-property: opacity;
 	-o-transition-property: opacity;
 	-webkit-transition-property: opacity;

@@ -1,9 +1,5 @@
 <?php
-    // My modifications to mailer script from:
-    // http://blog.teamtreehouse.com/create-ajax-contact-form
-    // Added input sanitizing to prevent injection
-
-    // Only process POST reqeusts.
+    //
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
@@ -22,7 +18,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "contact@markups.io";
+        $recipient = "technical.arcadia2k18@gmail.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
