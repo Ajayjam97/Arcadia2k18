@@ -1,17 +1,30 @@
-.carousel-inner .item img {
-      width: 70%;
-      margin: auto;
-  }
 
-.carousel-inner .item {
-    opacity: 0;
+/*
+.carousel-inner .carousel-item {
+    opacity: 0.5;
     -ms-transition-property: opacity;
 	-o-transition-property: opacity;
 	-webkit-transition-property: opacity;
 	-moz-transition-property: opacity;
 	transition-property: opacity;
+	transition-duration: 2s;
+
 }
 
 .carousel-fade .carousel-inner .active {
   opacity: 1;
+}*/
+#carousel{
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 60%;
+  margin-left: 10%;
+}
+
+#carousel > div {
+  position: absolute;
+  
+ 
 }
