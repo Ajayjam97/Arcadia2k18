@@ -654,6 +654,12 @@ button:focus {
 /* SPEAKERS */
 /*--------------------*/
 
+.mu-title-area > h{
+	margin-top: -30px;
+
+}
+
+
 
 #mu-speakers {
 	background-color: #fff;
@@ -677,12 +683,22 @@ button:focus {
 }
 
 .mu-single-speakers {
-	padding: 0 10px;
+	padding: 0px 10px;
+	margin-top: 5px;
 	outline: none;
 	text-align: center;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
+
+
+.mu-single-speakers img {
+  
+      border-radius: 50%;
+
+}
+
+
 
 .mu-speakers-slider .slick-next {
 	right: -60px;
