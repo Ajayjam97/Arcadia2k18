@@ -23,3 +23,45 @@ setInterval(function() {
     .appendTo('#carousel');
 }, 3000);
 
+
+
+
+function next(){
+
+ // write a simple tween object
+var tween = KUTE.fromTo('#path4429',  // target shape
+   { path: '#path4429' }, // from shape
+   { path: '#path4448' }, // to shape
+   { // options
+  easing: 'easingCubicInOut', 
+  yoyo: false, repeat: 0, duration: 2500,
+  morphIndex: 127
+   }
+ ).start();
+
+
+
+var tween3 = KUTE.fromTo('#path4427',  // target shape
+   { path: '#path4427' }, // from shape
+   { path: '#path4446' }, // to shape
+   { // options
+  easing: 'easingCubicInOut', 
+  yoyo: false, 
+  repeat: 0, 
+  duration: 2500,
+  morphIndex: 127
+   }
+ ).start();
+
+
+var tween2 = KUTE.fromTo('#path4425',  // target shape
+   { path: '#path4425' }, // from shape
+   { path: '#path4444' }, // to shape
+   { // options
+  easing: 'easingCubicInOut', 
+  yoyo: false, repeat: 0, duration: 2500,
+  morphIndex: 127
+   }
+ ).start();
+
+}
