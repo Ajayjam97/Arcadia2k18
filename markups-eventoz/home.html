@@ -73,8 +73,9 @@
 				        <li><a href="#mu-schedule">Events</a></li>
 			            <li><a href="#mu-speakers">Contacts</a></li>
 			            <li><a href="#mu-venue">Venue</a></li>
-			            <li><a href="#mu-register">Enquiry</a></li>
+			            <li><a href="#mu-register">Register</a></li>
 			            <li><a href="#mu-sponsors">Sponsors</a></li>
+			            <li><a href="#mu-enquiry">Enquiry</a></li>
 			            <li><a href="#mu-contact">Contact Us</a></li>
 			      	</ul>
 			    </div><!-- /.navbar-collapse -->
@@ -342,6 +343,7 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
+		
 
 		<!-- Start Venue -->
 		<section id="mu-venue">
@@ -386,42 +388,56 @@
 		</section>
 		<!-- End Pricing -->
 
-		<!-- Start Register  -->
-		<section id="mu-register">
+
+			<!-- start register -->
+	
+	<section id="mu-register">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="mu-register-area">
-
+<div id="registermessage"></div>
 							<div class="mu-title-area">
-								<h2 class="mu-title wow slideInUp">Event Enquiry</h2>
-								<p>Select any of the event from the list to get the details of the events.</p>
+								<h2 class="mu-title">Register Form</h2>
+								<p>NOTE: Online registeration is only available to students of other colleges.</p>
 							</div>
 
 							<div class="mu-register-content">
-								<form class="mu-register-form wow slideInUp">
-
-									
+								<form class="mu-register-form" id="register" method="post" action="register.php">
 
 									<div class="row">
-										
-										<div class="col-md-12">
+										<div class="col-md-6">
+											<div class="form-group">                
+												<input type="text" class="form-control" placeholder="Your Full Name" id="name" name="name" required="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">                
+												<input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" required="">
+											</div>     
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">                
+												<input type="text" class="form-control" placeholder="Your College Name" id="college" name="college" required="">
+											</div>
+										</div>
+										<div class="col-md-6">
 											
 										<div class="form-group"> 
-											<select class="form-control" name="ticket" id="events" onchange="eventpdf();">
-												<option value="0">Event1</option>
-												<option value="1">Event2</option>
-												<option value="2">Event3</option>
+											<select class="form-control custom-select" name="events[]" id="sel" multiple> 
+												<option class="mul" value="ev1">Event 1 ($12)</option>
+												<option class="mul" value="ev2">Event 2 ($22)</option>
+												<option class="mul" value="ev3">Event 3 ($45)</option>
 											</select>
 										</div>      
 										</div>
 									</div>
 
-									<div  id="event_submit">
-									<a class="mu-reg-submit-btn" target="_blank" href="/0.pdf">
-									SUBMIT
-									</a>
-</div>
+									<button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
 
 					            </form>
 							</div>
@@ -431,7 +447,9 @@
 				</div>
 			</div>
 		</section>
-		<!-- End Register -->
+
+
+		
 
 		<!-- Start FAQ -->
 		<section id="mu-faq">
@@ -583,9 +601,54 @@
 				</div>
 			</div>
 		</section>
-		<!-- End Sponsors -->
 
+		<!-- Start Enquiry -->
+		<section id="mu-enquiry">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-register-area">
 
+							<div class="mu-title-area">
+								<h2 class="mu-title wow slideInUp">Event Enquiry</h2>
+								<p>Select any of the event from the list to get the details of the events.</p>
+							</div>
+
+							<div class="mu-register-content">
+								<form class="mu-register-form wow slideInUp">
+
+									
+
+									<div class="row">
+										
+										<div class="col-md-12">
+											
+										<div class="form-group"> 
+											<select class="form-control" name="ticket" id="events" onchange="eventpdf();">
+												<option value="0">Event1</option>
+												<option value="1">Event2</option>
+												<option value="2">Event3</option>
+											</select>
+										</div>      
+										</div>
+									</div>
+
+									<div  id="event_submit">
+									<a class="mu-reg-submit-btn" target="_blank" href="/0.pdf">
+									SUBMIT
+									</a>
+</div>
+
+					            </form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End enquiry -->
+	
 		<!-- Start Contact -->
 		<section id="mu-contact">
 			<div class="container">

@@ -966,10 +966,12 @@ button:focus {
 	color: #fff;
 	background-color: transparent;
 	border: 2px solid #fff;
+	font-size: 15px;
 }
 
 .mu-register-form select.form-control option{
 	color: #333;
+	font-size: 15px;
 }
 
 .mu-register-form .form-control::-webkit-input-placeholder {
@@ -1722,3 +1724,35 @@ button:focus {
 	
 }
 
+#mu-enquiry {
+	background-image: url("assets/images/register-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#mu-enquiry::before {
+	background: rgba(0,0,0,0.9);
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.9;
+}
+#sel {
+	
+	height: 65px;
+}
+.mu-register-form select.form-control option.mul{
+	color: white;
+	font-size: 15px;
+}
+input.form-control,#events {
+	font-size: 15px;
+}
