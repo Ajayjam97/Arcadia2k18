@@ -917,9 +917,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-	background-image: url("assets/images/register-bg.jpg");
-	background-position: center center;
-	background-size: cover;
+	background:  url('star5.gif') no-repeat center center fixed; 
 	background-attachment: fixed;
 	display: inline;
 	float: left;
