@@ -1756,3 +1756,81 @@ button:focus {
 input.form-control,#events {
 	font-size: 15px;
 }
+#mu-events {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-events-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-events-conten {
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-single-event {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.mu-single-event-head {
+	color: #555;
+	display: inline;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.mu-single-event-head .mu-currency {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.mu-single-event-head .mu-rate {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 0.9;
+	letter-spacing: 3px;
+}
+
+.mu-single-event-head .mu-time {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 0;
+	font-style: italic;
+}
+
+.mu-single-event .mu-event-title {
+	color: #555;
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+.mu-single-event ul {
+	list-style: none;
+}
+
+.mu-single-event ul li{
+	list-style: none;
+	color: #555;
+}
+.pad {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
