@@ -514,7 +514,8 @@ button:focus {
 .mu-schedule-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	text-align: center;
+	padding: 0px 0;
 	width: 100%;
 }
 
