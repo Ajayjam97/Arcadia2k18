@@ -1766,7 +1766,7 @@ input.form-control,#events {
 .mu-events-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	/*padding: 100px 0; */
 	width: 100%;
 }
 
