@@ -7,12 +7,12 @@
         $college = strip_tags($_POST["college"]);
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $number = filter_var($_POST["number"], FILTER_SANITIZE_NUMBER_INT);
+        $phone = filter_var($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
         $events = $_POST["events"];
        
 
         
-        if ( empty($name) OR empty($college) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR !filter_var($number, FILTER_VALIDATE_INT) OR empty($events)) {
+        if ( empty($name) OR empty($college) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($events)) {
             
             http_response_code(400);
             echo "Oops! There was a problem with your Registration. Please complete the form and try again.";
@@ -30,7 +30,7 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
-        $email_content .= "Email: $number\n\n";
+        $email_content .= "Mobile: $phone\n\n";
         // $email_content .= "Subject: $cont_subject\n";
         
         $email_content .= "Events: ";
