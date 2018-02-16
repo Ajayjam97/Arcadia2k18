@@ -347,7 +347,8 @@ button:focus {
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding-top: 50px;
+	margin-bottom: 150px;
 	width: 100%;
 }
 
