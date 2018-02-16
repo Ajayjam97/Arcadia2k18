@@ -515,7 +515,7 @@ button:focus {
 	display: inline;
 	float: left;
 	text-align: center;
-	padding: 0px 0;
+	
 	width: 100%;
 }
 
@@ -923,6 +923,7 @@ button:focus {
 	background-attachment: fixed;
 	display: inline;
 	float: left;
+	margin-top: 100px;
 	position: relative;
 	width: 100%;
 }

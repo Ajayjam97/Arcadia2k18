@@ -7,11 +7,12 @@
         $college = strip_tags($_POST["college"]);
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $number = filter_var($_POST["number"], FILTER_SANITIZE_NUMBER_INT);
         $events = $_POST["events"];
        
 
         
-        if ( empty($name) OR empty($college) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($events)) {
+        if ( empty($name) OR empty($college) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR !filter_var($number, FILTER_VALIDATE_INT) OR empty($events)) {
             
             http_response_code(400);
             echo "Oops! There was a problem with your Registration. Please complete the form and try again.";
@@ -29,6 +30,7 @@
         // Build the email content.
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
+        $email_content .= "Email: $number\n\n";
         // $email_content .= "Subject: $cont_subject\n";
         
         $email_content .= "Events: ";
@@ -81,7 +83,7 @@ $usermail = "
 <section class='main'>
 <h2>Hi,$name</h2>
 <h3>THANKS FOR REGISTERING, </h3>
-<p>You have been successfully registered for the Arcadia2k18. Make sure to bring the fees for the competition at the time of competition.</p>
+<p>You have been successfully registered for the Arcadia2k18. Make sure to bring the entry fees and the fees of your events at the time of competition.</p>
 <p>Regards.</p>
 <p>Technical Team </p>
 <p>Arcadia2k18</p>
