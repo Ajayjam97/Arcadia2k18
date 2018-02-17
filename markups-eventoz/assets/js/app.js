@@ -82,10 +82,14 @@ $(function() {
 			$(formMessages).text(response);
 
 			// Clear the form.
-			$('#name').val('');
+			/*$('#name').val('');
 			$('#email').val('');
 			$('#college').val('');
-			$('#events').val('');
+			
+			$('#events').val('');*/
+			$( '#register' ).each(function(){
+    this.reset();
+});
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
